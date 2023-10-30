@@ -1,0 +1,13 @@
+face_value = 100
+coupon_rate = 0.06
+t1 = 0.5;r1 = 0.05
+t2 = 1;r2 = 0.058
+t3 = 1.5;r3 = 0.064
+t4 = 2;r4 = 0.068
+coupon = face_value * coupon_rate/2
+cf1 = coupon
+cf2 = coupon
+cf3 = coupon
+cf4 = coupon + face_value
+price = cf1/(1+r1)**t1 + cf2/(1+r2)**t2 + cf3/(1+r3)**t3 + cf4/(1+r4)**t4
+print(f'The price of the bond is ${price:.2f}')
